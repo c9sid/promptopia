@@ -12,6 +12,9 @@ const nextConfig = {
       },
     ]
   },
+  experimental:{
+    missingSuspenseWithCSRBailout: false,
+  },
   webpack(config) {
     config.experiments = {
       ...config.experiments,
